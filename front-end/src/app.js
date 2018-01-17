@@ -6,7 +6,6 @@ class App {
     this.notePanel = document.getElementById('note-panel')
 
     this.noteList = document.getElementById('note-list')
-    this.noteList.addEventListener('click', this.renderSelectedNoteInNotePanel.bind(this))
     this.renderNotesInNoteList();
 
     this.newNoteButton = document.getElementById('new-note-button')
@@ -21,14 +20,24 @@ class App {
   }
 
   renderNotesInNoteList() {
-    this.noteList.innerHTML = `${this.notes.map( note => note.renderForList() ).join('')}`
+    this.noteList.addEventListener('click', this.eventOnNoteList.bind(this))
+    this.noteList.innerHTML = `${this.notes.map( note => note.renderForList() ).reverse().join('')}`
   }
 
-  renderSelectedNoteInNotePanel() {
+  eventOnNoteList() {
     if (event.target.dataset.action === 'show-in-panel') {
       let noteToRender = this.notes.find(note => note.id == event.target.dataset.noteid)
       this.notePanel.innerHTML = noteToRender.renderForPanel();
+    } else if (event.target.dataset.action === 'delete') {
+      let noteToDelete = this.notes.find(note => note.id == event.target.dataset.noteid)
+      fetch(`http://localhost:3000/api/v1/notes/${noteToDelete.id}`,
+        {method: 'DELETE',
+        headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        body: JSON.stringify(noteToDelete)})
+        this.notes.splice(this.notes.indexOf(noteToDelete),1)
+        this.renderNotesInNoteList()
     }
+
   }
 
   renderNewNoteForm() {
@@ -43,14 +52,32 @@ class App {
       let noteToEdit = this.notes.find(note => note.id == event.target.dataset.noteid)
         noteToEdit.title = document.getElementById('note-title-input').value
         noteToEdit.body = document.getElementById('note-body-input').value
-      if (noteToEdit.id !== null) {
-        fetch('http://localhost:3000/api/v1/notes',
+      if (noteToEdit.id !== "temp") {
+        fetch(`http://localhost:3000/api/v1/notes/${noteToEdit.id}`,
           {method: 'PATCH',
-          header: {'content-type': 'application/json', 'accept': 'application/json'},
+          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
           body: JSON.stringify(noteToEdit)})
           .then( response => response.json() )
-          .then( data => console.log(data) )
+          .then( data =>
+                  noteToEdit.updateNote(data) )
+      }
+      else {
+        fetch(`http://localhost:3000/api/v1/notes`,
+          {method: 'POST',
+          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+          body: JSON.stringify(noteToEdit)})
+          .then( response => response.json() )
+          .then( this.createNewNoteFromApiResponseAndRefreshNotePanel.bind(this) )
+          }
+      }
+      this.renderNotesInNoteList();
     }
-  }
+
+    createNewNoteFromApiResponseAndRefreshNotePanel(data) {
+      this.notes.pop()
+      this.notes.push(new Note(data))
+      this.notePanel.innerHTML = this.notes[this.notes.length-1].renderForPanel();
+    }
 }
-}
+//
+// this.notes[this.notes.length-1].renderForPanel();

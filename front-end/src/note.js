@@ -4,18 +4,24 @@ let noteId = 0
 
 return class Note {
 
-  constructor({id=null, user, title, body}) {
+  constructor({id="temp", user, title, body}) {
     this.id = id
     this.user = user
     this.title = title
     this.body = body
-    this.summary = body.slice(0,50) + "..."
+  }
+
+  updateNote({title, body}) {
+    this.title = title
+    this.body = body
+    return this
   }
 
   renderForList(){
     return `<div class="note-listing" data-noteId="${this.id}" data-action="show-in-panel">
-              <h3 data-noteId="${this.id}" data-action="show-in-panel">${this.title}</h3>
-              <p data-noteId="${this.id}" data-action="show-in-panel">${this.summary}</p>
+              <div class="note-listing-title" data-noteId="${this.id}" data-action="show-in-panel">${this.title}</div>
+              <button type="button" class="delete-note-button" data-noteId="${this.id}" data-action="delete">X</button>
+              <div class="note-listing-sum" data-noteId="${this.id}" data-action="show-in-panel">${this.body.slice(0,50) + "..."}</div>
             </div>`
   }
 

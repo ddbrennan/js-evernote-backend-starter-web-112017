@@ -13,6 +13,34 @@
 .note-listing {
   background: blue;
   color: white;
+  margin: 10px;
+  overflow: auto;
+}
+
+.note-listing-title {
+  width: 85%;
+  height: 30%;
+  display: block;
+}
+
+.note-listing-sum {
+  width: 70%;
+  height: 70%;
+  display: inline;
+}
+
+.delete-note-button {
+  height: 25px;
+  width: 25px;
+  border: none;
+  font-size: 10px;
+  font-weight: bolder;
+  border-radius: 50%;
+  display: block;
+  float: right;
+  position: relative;
+  top:-10px;
+  right:5px;
 }
 
 #note-panel {
