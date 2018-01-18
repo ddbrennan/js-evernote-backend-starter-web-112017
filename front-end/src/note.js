@@ -21,7 +21,7 @@ return class Note {
     return `<div class="note-listing" data-noteId="${this.id}" data-action="show-in-panel">
               <div class="note-listing-title" data-noteId="${this.id}" data-action="show-in-panel">${this.title}</div>
               <div class="note-listing-sum" data-noteId="${this.id}" data-action="show-in-panel">${this.body.slice(0,50)}</div>
-              <button type="button" class="delete-note-button" data-noteId="${this.id}" data-action="delete">X</button>
+              <button type="button" class="delete-note-button" data-noteId="${this.id}" data-action="delete">✘</button>
             </div>`
   }
 
@@ -34,7 +34,7 @@ return class Note {
 
     return `<form id="note-form">
               <input id="note-title-input" type="text" name="title" value="${this.title}">
-              <input id="note-submit" type="submit" value="Post!" data-action="submit-note" data-noteId="${this.id}">
+              <input id="note-submit" type="submit" value="✔︎" data-action="submit-note" data-noteId="${this.id}">
             </form>
             <textarea id="note-body-input" name="body" form="note-form">${this.body}
             </textarea>`

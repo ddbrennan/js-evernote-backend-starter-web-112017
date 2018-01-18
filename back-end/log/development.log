@@ -13212,3 +13212,1186 @@ Processing by Api::V1::NotesController#index as */*
 Completed 200 OK in 50ms (Views: 45.8ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:48:29 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.95ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:48:48 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.09ms)
+Completed 200 OK in 50ms (Views: 44.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:50:08 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.32ms)
+Completed 200 OK in 69ms (Views: 62.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:51:03 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.6ms)
+Completed 200 OK in 61ms (Views: 54.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:51:13 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.77ms)
+Completed 200 OK in 71ms (Views: 65.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:51:23 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (5.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.71ms)
+Completed 200 OK in 59ms (Views: 46.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:51:33 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.51ms)
+Completed 200 OK in 64ms (Views: 54.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:51:45 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.64ms)
+Completed 200 OK in 60ms (Views: 53.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:52:30 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.36ms)
+Completed 200 OK in 61ms (Views: 51.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:52:44 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.83ms)
+Completed 200 OK in 65ms (Views: 57.0ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 20:52:52 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"Great New Post", "body"=>"New Post Body\n            \n            ", "note"=>{"id"=>"85", "title"=>"Great New Post", "body"=>"New Post Body\n            \n            "}}
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "notes" SET "body" = ?, "title" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["body", "New Post Body\n            \n            "], ["title", "Great New Post"], ["updated_at", "2018-01-18 01:52:52.773471"], ["id", 85]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (4.25ms)
+Completed 200 OK in 74ms (Views: 14.1ms | ActiveRecord: 5.0ms)
+
+
+Started PATCH "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 20:53:08 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"New Title", "body"=>"New Post Body\n            \n            \n            ", "note"=>{"id"=>"85", "title"=>"New Title", "body"=>"New Post Body\n            \n            \n            "}}
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[33mUPDATE "notes" SET "body" = ?, "title" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["body", "New Post Body\n            \n            \n            "], ["title", "New Title"], ["updated_at", "2018-01-18 01:53:08.572676"], ["id", 85]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (3.98ms)
+Completed 200 OK in 73ms (Views: 12.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:53:47 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.96ms)
+Completed 200 OK in 70ms (Views: 62.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:53:55 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.48ms)
+Completed 200 OK in 67ms (Views: 60.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:54:24 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (5.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.87ms)
+Completed 200 OK in 67ms (Views: 57.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:54:38 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.25ms)
+Completed 200 OK in 78ms (Views: 69.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:54:46 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.49ms)
+Completed 200 OK in 64ms (Views: 54.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:54:54 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.08ms)
+Completed 200 OK in 63ms (Views: 56.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:55:00 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.45ms)
+Completed 200 OK in 64ms (Views: 56.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:55:08 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.87ms)
+Completed 200 OK in 60ms (Views: 51.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:55:18 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.57ms)
+Completed 200 OK in 54ms (Views: 43.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:55:32 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.03ms)
+Completed 200 OK in 62ms (Views: 49.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:56:06 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.38ms)
+Completed 200 OK in 68ms (Views: 49.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:56:19 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.63ms)
+Completed 200 OK in 53ms (Views: 45.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:56:45 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.21ms)
+Completed 200 OK in 60ms (Views: 51.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:57:02 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.45ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:57:03 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.39ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:57:08 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.54ms)
+Completed 200 OK in 53ms (Views: 44.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:57:16 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.98ms)
+Completed 200 OK in 60ms (Views: 49.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:57:40 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.33ms)
+Completed 200 OK in 65ms (Views: 58.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:58:00 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.06ms)
+Completed 200 OK in 58ms (Views: 43.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:58:06 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.47ms)
+Completed 200 OK in 53ms (Views: 44.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:58:18 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.14ms)
+Completed 200 OK in 56ms (Views: 43.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:58:34 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.44ms)
+Completed 200 OK in 56ms (Views: 48.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:58:46 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.95ms)
+Completed 200 OK in 63ms (Views: 55.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:58:56 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.88ms)
+Completed 200 OK in 52ms (Views: 47.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 20:59:53 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.5ms)
+Completed 200 OK in 48ms (Views: 43.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:00:59 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.31ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:01:18 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.93ms)
+Completed 200 OK in 49ms (Views: 44.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:04:25 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.75ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:05:26 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.09ms)
+Completed 200 OK in 49ms (Views: 44.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:05:43 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.01ms)
+Completed 200 OK in 51ms (Views: 44.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:06:25 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.61ms)
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:07:38 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.71ms)
+Completed 200 OK in 59ms (Views: 49.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:08:32 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.76ms)
+Completed 200 OK in 59ms (Views: 51.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:09:13 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.94ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:09:50 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.51ms)
+Completed 200 OK in 50ms (Views: 45.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:10:21 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.89ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:10:32 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.61ms)
+Completed 200 OK in 52ms (Views: 40.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:10:52 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.46ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:11:03 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.1ms)
+Completed 200 OK in 50ms (Views: 44.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:11:18 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.52ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:11:37 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (4.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.71ms)
+Completed 200 OK in 51ms (Views: 43.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:11:51 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.24ms)
+Completed 200 OK in 51ms (Views: 45.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:12:02 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.55ms)
+Completed 200 OK in 47ms (Views: 42.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:12:26 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.23ms)
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:12:49 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.52ms)
+Completed 200 OK in 49ms (Views: 42.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:13:05 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.51ms)
+Completed 200 OK in 51ms (Views: 43.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:13:26 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.8ms)
+Completed 200 OK in 52ms (Views: 44.7ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 21:13:58 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"TeSt", "body"=>"New Post Body\n            \n            \n            \n            ", "note"=>{"id"=>"85", "title"=>"TeSt", "body"=>"New Post Body\n            \n            \n            \n            "}}
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "notes" SET "body" = ?, "title" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["body", "New Post Body\n            \n            \n            \n            "], ["title", "TeSt"], ["updated_at", "2018-01-18 02:13:58.342693"], ["id", 85]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (7.2ms)
+Completed 200 OK in 81ms (Views: 13.2ms | ActiveRecord: 6.9ms)
+
+
+Started PATCH "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 21:14:06 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"Title", "body"=>"New Post Body\n            \n            \n            \n            ", "note"=>{"id"=>"85", "title"=>"Title", "body"=>"New Post Body\n            \n            \n            \n            "}}
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "notes" SET "title" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["title", "Title"], ["updated_at", "2018-01-18 02:14:06.717728"], ["id", 85]]
+  [1m[35m (4.9ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (4.45ms)
+Completed 200 OK in 80ms (Views: 14.7ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:14:51 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.92ms)
+Completed 200 OK in 49ms (Views: 41.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:15:22 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.46ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:15:54 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.7ms)
+Completed 200 OK in 50ms (Views: 44.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:16:46 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (33.5ms)
+Completed 200 OK in 65ms (Views: 55.8ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:17:35 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.63ms)
+Completed 200 OK in 52ms (Views: 45.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:17:56 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.13ms)
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:18:48 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.23ms)
+Completed 200 OK in 69ms (Views: 57.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:19:01 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.43ms)
+Completed 200 OK in 51ms (Views: 43.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:19:40 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.1ms)
+Completed 200 OK in 59ms (Views: 53.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:20:06 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.97ms)
+Completed 200 OK in 51ms (Views: 43.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:22:14 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.23ms)
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:23:52 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.42ms)
+Completed 200 OK in 49ms (Views: 44.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:24:35 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (4.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.47ms)
+Completed 200 OK in 49ms (Views: 42.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:24:56 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.08ms)
+Completed 200 OK in 52ms (Views: 45.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:25:25 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.55ms)
+Completed 200 OK in 49ms (Views: 41.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:25:50 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.45ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:25:56 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.97ms)
+Completed 200 OK in 54ms (Views: 49.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:26:35 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (24.56ms)
+Completed 200 OK in 52ms (Views: 46.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:26:57 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.62ms)
+Completed 200 OK in 55ms (Views: 46.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:27:10 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.22ms)
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:27:31 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.29ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:30:32 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.96ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:31:00 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.22ms)
+Completed 200 OK in 53ms (Views: 48.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:32:27 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.54ms)
+Completed 200 OK in 71ms (Views: 62.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:32:55 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.52ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:33:08 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.26ms)
+Completed 200 OK in 53ms (Views: 44.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 21:33:18 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"Title", "body"=>"New Post Body\n            \n            \n            \n            \n            ", "note"=>{"id"=>"85", "title"=>"Title", "body"=>"New Post Body\n            \n            \n            \n            \n            "}}
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (1.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[33mUPDATE "notes" SET "body" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["body", "New Post Body\n            \n            \n            \n            \n            "], ["updated_at", "2018-01-18 02:33:18.216550"], ["id", 85]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (6.76ms)
+Completed 200 OK in 81ms (Views: 12.6ms | ActiveRecord: 8.3ms)
+
+
+Started PATCH "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 21:33:21 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"Test", "body"=>"New Post Body\n            \n            \n            \n            \n            ", "note"=>{"id"=>"85", "title"=>"Test", "body"=>"New Post Body\n            \n            \n            \n            \n            "}}
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "notes" SET "title" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["title", "Test"], ["updated_at", "2018-01-18 02:33:21.883427"], ["id", 85]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (6.8ms)
+Completed 200 OK in 79ms (Views: 13.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:33:39 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.26ms)
+Completed 200 OK in 55ms (Views: 46.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:34:11 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.31ms)
+Completed 200 OK in 53ms (Views: 45.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:34:24 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.34ms)
+Completed 200 OK in 58ms (Views: 53.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:34:38 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.55ms)
+Completed 200 OK in 56ms (Views: 46.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:34:50 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.1ms)
+Completed 200 OK in 58ms (Views: 50.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:35:19 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.97ms)
+Completed 200 OK in 55ms (Views: 48.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:35:37 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.02ms)
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:35:45 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.02ms)
+Completed 200 OK in 59ms (Views: 48.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:36:28 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.77ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:36:56 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.41ms)
+Completed 200 OK in 54ms (Views: 44.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:37:12 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.89ms)
+Completed 200 OK in 54ms (Views: 44.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:37:19 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.1ms)
+Completed 200 OK in 56ms (Views: 49.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:38:20 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.21ms)
+Completed 200 OK in 55ms (Views: 50.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:39:07 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.5ms)
+Completed 200 OK in 55ms (Views: 48.9ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 21:39:09 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"Test", "body"=>"New Post Body\n            \n            \n            \n            \n            \n            ", "note"=>{"id"=>"85", "title"=>"Test", "body"=>"New Post Body\n            \n            \n            \n            \n            \n            "}}
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "notes" SET "body" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["body", "New Post Body\n            \n            \n            \n            \n            \n            "], ["updated_at", "2018-01-18 02:39:09.382554"], ["id", 85]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (7.17ms)
+Completed 200 OK in 85ms (Views: 14.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:39:23 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.95ms)
+Completed 200 OK in 54ms (Views: 46.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:39:46 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.95ms)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:40:11 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.5ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:40:18 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.28ms)
+Completed 200 OK in 57ms (Views: 52.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:40:45 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (26.1ms)
+Completed 200 OK in 58ms (Views: 49.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:40:53 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.76ms)
+Completed 200 OK in 57ms (Views: 46.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:41:15 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.41ms)
+Completed 200 OK in 58ms (Views: 51.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:41:23 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.52ms)
+Completed 200 OK in 58ms (Views: 53.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:41:29 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (30.62ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:41:47 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (25.3ms)
+Completed 200 OK in 58ms (Views: 48.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:42:01 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.24ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:42:17 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.35ms)
+Completed 200 OK in 54ms (Views: 49.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:42:24 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (5.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28.56ms)
+Completed 200 OK in 82ms (Views: 68.7ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:42:31 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (20.76ms)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:42:36 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.01ms)
+Completed 200 OK in 48ms (Views: 41.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:42:43 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.35ms)
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:43:17 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.87ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:43:28 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.25ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:44:34 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.07ms)
+Completed 200 OK in 49ms (Views: 41.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:45:20 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.56ms)
+Completed 200 OK in 47ms (Views: 42.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:46:30 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.45ms)
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:46:53 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.39ms)
+Completed 200 OK in 48ms (Views: 41.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:47:11 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (22.53ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/api/v1/notes/85" for 127.0.0.1 at 2018-01-17 21:47:58 -0500
+Processing by Api::V1::NotesController#destroy as JSON
+  Parameters: {"id"=>"85", "user"=>nil, "title"=>"Test", "body"=>"New Post Body\n            \n            \n            \n            \n            \n            ", "note"=>{"id"=>"85", "title"=>"Test", "body"=>"New Post Body\n            \n            \n            \n            \n            \n            "}}
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 85]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.27ms)
+Completed 200 OK in 44ms (Views: 8.5ms | ActiveRecord: 3.9ms)
+
+
+Started DELETE "/api/v1/notes/84" for 127.0.0.1 at 2018-01-17 21:47:59 -0500
+Processing by Api::V1::NotesController#destroy as JSON
+  Parameters: {"id"=>"84", "user"=>nil, "title"=>"New Post", "body"=>"New Post Body\n            \n            ", "note"=>{"id"=>"84", "title"=>"New Post", "body"=>"New Post Body\n            \n            "}}
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 84], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 84]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.99ms)
+Completed 200 OK in 43ms (Views: 9.0ms | ActiveRecord: 5.5ms)
+
+
+Started DELETE "/api/v1/notes/83" for 127.0.0.1 at 2018-01-17 21:47:59 -0500
+Processing by Api::V1::NotesController#destroy as JSON
+  Parameters: {"id"=>"83", "user"=>nil, "title"=>"New Post", "body"=>"New Post Body\n            ", "note"=>{"id"=>"83", "title"=>"New Post", "body"=>"New Post Body\n            "}}
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[31mDELETE FROM "notes" WHERE "notes"."id" = ?[0m  [["id", 83]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.01ms)
+Completed 200 OK in 44ms (Views: 10.3ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:48:02 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.93ms)
+Completed 200 OK in 18ms (Views: 14.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:48:25 -0500
+Processing by Api::V1::NotesController#create as JSON
+  Parameters: {"id"=>"temp", "user"=>{"name"=>"truman"}, "title"=>"WOW COOL", "body"=>"I love this note", "note"=>{"id"=>"temp", "title"=>"WOW COOL", "body"=>"I love this note"}}
+Unpermitted parameters: id, user, note
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "WOW COOL"], ["body", "I love this note"], ["created_at", "2018-01-18 02:48:25.504499"], ["updated_at", "2018-01-18 02:48:25.504499"]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (6.69ms)
+Completed 201 Created in 59ms (Views: 12.4ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:50:07 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.54ms)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:50:27 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.42ms)
+Completed 200 OK in 32ms (Views: 24.1ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/api/v1/notes/86" for 127.0.0.1 at 2018-01-17 21:50:50 -0500
+Processing by Api::V1::NotesController#update as JSON
+  Parameters: {"id"=>"86", "user"=>nil, "title"=>"This is really great", "body"=>"Wow! Cool note!\n            ", "note"=>{"id"=>"86", "title"=>"This is really great", "body"=>"Wow! Cool note!\n            "}}
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT  "notes".* FROM "notes" WHERE "notes"."id" = ? LIMIT ?[0m  [["id", 86], ["LIMIT", 1]]
+Unpermitted parameters: id, user, note
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "notes" SET "body" = ?, "title" = ?, "updated_at" = ? WHERE "notes"."id" = ?[0m  [["body", "Wow! Cool note!\n            "], ["title", "This is really great"], ["updated_at", "2018-01-18 02:50:51.014621"], ["id", 86]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+[active_model_serializers] Rendered NoteSerializer with ActiveModelSerializers::Adapter::Attributes (6.86ms)
+Completed 200 OK in 73ms (Views: 12.7ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:51:31 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.73ms)
+Completed 200 OK in 29ms (Views: 23.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:51:51 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.38ms)
+Completed 200 OK in 29ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:52:18 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.16ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:52:22 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.86ms)
+Completed 200 OK in 30ms (Views: 24.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:52:53 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (11.18ms)
+Completed 200 OK in 32ms (Views: 28.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:52:59 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (4.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.22ms)
+Completed 200 OK in 30ms (Views: 23.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:05 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.39ms)
+Completed 200 OK in 30ms (Views: 24.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:11 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.73ms)
+Completed 200 OK in 32ms (Views: 26.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:20 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.26ms)
+Completed 200 OK in 34ms (Views: 24.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:25 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.63ms)
+Completed 200 OK in 29ms (Views: 22.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:30 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.12ms)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:42 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.07ms)
+Completed 200 OK in 33ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:50 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.39ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:53:55 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.65ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:54:12 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (13.18ms)
+Completed 200 OK in 35ms (Views: 27.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:54:33 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.04ms)
+Completed 200 OK in 31ms (Views: 24.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:54:39 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.47ms)
+Completed 200 OK in 33ms (Views: 25.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:54:44 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.17ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:55:00 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.6ms)
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:55:06 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.8ms)
+Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:55:12 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.93ms)
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:55:18 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.95ms)
+Completed 200 OK in 32ms (Views: 25.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:55:30 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (10.21ms)
+Completed 200 OK in 29ms (Views: 24.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:55:34 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.8ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.74ms)
+Completed 200 OK in 32ms (Views: 27.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:55:41 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.12ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-01-17 21:56:01 -0500
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (9.64ms)
+Completed 200 OK in 32ms (Views: 24.7ms | ActiveRecord: 1.3ms)
+
+
