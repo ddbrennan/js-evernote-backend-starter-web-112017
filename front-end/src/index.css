@@ -1,32 +1,70 @@
+#master-div {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 5% 30% auto;
+  grid-template-rows: 15% 10% auto;
+}
+
+
 #note-list {
-  background: grey;
+  background: rgb(241, 240, 236);
+  grid-column: 2;
+  grid-row: 3;
+  overflow: auto;
+  padding: .3vmin;
+  /* min-width: 200px;
   width: calc(30% - 75px);
   height: 80%;
-  overflow: auto;
   display: block;
   float: left;
   position: absolute;
   top: 20%;
-  left: 75px;
+  left: 75px; */
 }
 
 .note-listing {
-  background: blue;
-  color: white;
+  background: rgb(254, 254, 252);
   margin: 10px;
   overflow: auto;
+  padding: 10px;
+  display: grid;
+  color: rgb(148, 147, 142);
+  grid-template-columns: 90% auto;
+  grid-template-rows: 2;
+}
+
+.note-listing:hover {
+  border: solid;
+  border-width: .3vmin;
+  border-color: rgb(148, 147, 142);
 }
 
 .note-listing-title {
-  width: 85%;
-  height: 30%;
-  display: block;
+  /* width: 85%;
+  height: 30%; */
+  grid-column: 1;
+  grid-row: 1;
+  font-size: calc(8px + .75vw);
+  font-weight: bold;
+  margin: 1.25vmin;
+  color: rgb(40, 40, 39);
 }
 
 .note-listing-sum {
-  width: 70%;
-  height: 70%;
-  display: inline;
+  /* width: 70%;
+  height: 70%; */
+  grid-column: 1;
+  grid-row: 2;
+  font-size: calc(5px + .75vw);
+  font-style: italic;
+  margin: 1.25vmin;
+  margin-top: 0;
+  margin-left: 3vmin;
+
 }
 
 .delete-note-button {
@@ -36,59 +74,54 @@
   font-size: 10px;
   font-weight: bolder;
   border-radius: 50%;
-  display: block;
-  float: right;
-  position: relative;
-  top:-10px;
-  right:5px;
-}
-
-#note-panel {
-  background: silver;
-  width: 70%;
-  height: calc(100% - 75px);
-  display: block;
-  float: right;
-  position: absolute;
-  top: 75px;
-  right: 0px;
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 #sidebar {
-  width: 75px;
+  /* width: 75px;
   height: 100%;
   overflow: auto;
   display: block;
   float: left;
   position: absolute;
   top: 0px;
-  left: 0px;
-  background: green;
+  left: 0px; */
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background: rgb(232, 231, 223);
   text-align: center;
 }
 
 #toolbar {
-  width: 70%;
+  /* width: 70%;
   height: 75px;
   overflow: auto;
   display: block;
   float: right;
   position: absolute;
   top: 0px;
-  right: 0px;
-  background: yellow;
+  right: 0px; */
+  grid-column: 3;
+  grid-row: 1;
+  background: rgb(232, 231, 223);
 }
 
 #notebook-info {
-  background: red;
-  width: calc(30% - 75px);
+  background: rgb(148, 147, 142);
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  /* width: calc(30% - 75px);
   height: 20%;
   overflow: auto;
   display: block;
   float: left;
   position: absolute;
   top: 0px;
-  left: 75px;
+  left: 75px; */
 }
 
 #new-note-button {
@@ -101,11 +134,33 @@
   border-radius: 50%;
 }
 
+#note-panel {
+  background: rgb(254, 254, 252);
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  /* width: 70%;
+  min-width: 645px;
+  height: calc(100% - 75px); */
+  /* display: block;
+  float: right;
+  position: absolute; */
+  /* top: 75px;
+  right: 0px; */
+}
+
 #note-title-input {
   width: 90%;
   display:inline;
   float: left;
   height: 10px;
+  background-color: rgb(254, 254, 252);
+  border: 0;
+  font-size: calc(8px + 2vw);
+  font-weight: bold;
+  height: 10vmin;
+  font-family: serif;
+  padding: 2vmin;
 }
 
 #note-body-input {
@@ -114,10 +169,14 @@
   height: calc(100% - 22px);
   position: relative;
   padding: 0;
+  background-color: rgb(254, 254, 252);
+  border: 0;
 }
 
 #note-submit {
   display: inline;
   float: right;
   width: 5%;
+  background-color: rgb(254, 254, 252);
+  border: 0;
 }

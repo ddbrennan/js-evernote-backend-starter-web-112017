@@ -20,8 +20,8 @@ return class Note {
   renderForList(){
     return `<div class="note-listing" data-noteId="${this.id}" data-action="show-in-panel">
               <div class="note-listing-title" data-noteId="${this.id}" data-action="show-in-panel">${this.title}</div>
+              <div class="note-listing-sum" data-noteId="${this.id}" data-action="show-in-panel">${this.body.slice(0,50)}</div>
               <button type="button" class="delete-note-button" data-noteId="${this.id}" data-action="delete">X</button>
-              <div class="note-listing-sum" data-noteId="${this.id}" data-action="show-in-panel">${this.body.slice(0,50) + "..."}</div>
             </div>`
   }
 
